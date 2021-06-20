@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'open-sans';
+  src: url('fonts/Open_Sans/Open_Sans-Regular.ttf');
+}
+
+.a4 {
+  width: 210mm; /*297mm height*/
+}
+
+.cv {
+  font-family: open-sans, sans-serif;
+}
