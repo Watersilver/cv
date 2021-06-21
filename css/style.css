@@ -1,12 +1,118 @@
 @font-face {
   font-family: 'open-sans';
-  src: url('fonts/Open_Sans/Open_Sans-Regular.ttf');
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  background-color: #EDEDF0;
+  min-height: 100vh;
+}
+
+.a4, .pdf {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 5mm 20mm;
+  box-shadow: 0 0 15px #9B9B9B;
 }
 
 .a4 {
   width: 210mm; /*297mm height*/
 }
 
+.pdf {
+  width: 8.50in;
+}
+
 .cv {
+  font-family: ubuntu, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 22px;
+  margin: 17px 0 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: open-sans, sans-serif;
+}
+
+#work-xp {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#work-xp>h3 {
+  font-size: 15px;
+  margin: 0;
+  border-right: 2px solid black;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+#work-xp>p {
+  padding-left: 10px;
+}
+
+#programming-skills {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+#programming-skills>.whole-row {
+  grid-column: 1 / -1;
+}
+#programming-skills>h3 {
+  font-size: 17px;
+}
+#programming-skills>h3::after {
+  content: ":";
+  margin-right: 0.5em;
+}
+#programming-skills>:not(h3) {
+  align-self: center;
+  justify-self: left;
+  margin-left: 35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.comma-list {
+  list-style-type: none;
+  padding: 2px 0 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.comma-list>li {
+  white-space: nowrap;
+}
+.comma-list>li::after {
+  content: ",";
+  /* margin-right: 0.25em; closest to normal space */
+  margin-right: 0.5em;
+}
+.comma-list>li:last-child::after {
+  content: "";
+  margin: 0;
+}
+.capitalize-children>*:first-child::first-letter {
+  text-transform: capitalize;
 }
