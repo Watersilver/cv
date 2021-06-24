@@ -8,6 +8,16 @@
   src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'cm-serif';
+  src: url('../fonts/computer-modern/cmunrm.ttf');
+}
+
+* {
+  /* font-weight: normal !important; */
+  text-decoration: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +26,7 @@ body {
 main {
   display: grid;
   justify-content: center;
-  background-color: #EDEDF0;
+  /* background-color: #EDEDF0; */
   min-height: 100vh;
 }
 
@@ -24,7 +34,7 @@ main {
   box-sizing: border-box;
   background-color: white;
   padding: 5mm 20mm;
-  box-shadow: 0 0 15px #9B9B9B;
+  /* box-shadow: 0 0 15px #9B9B9B; */
 }
 
 .a4 {
@@ -37,11 +47,12 @@ main {
 
 .cv {
   font-family: ubuntu, sans-serif;
+  font-family: cm-serif, serif;
 }
 
 h1 {
   text-align: center;
-  margin: 0;
+  /* margin: 0; */
 }
 
 h2 {
@@ -52,6 +63,7 @@ h2 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: open-sans, sans-serif;
+  font-family: cm-serif, serif;
 }
 
 #work-xp {
@@ -66,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 10px;
 }
 #work-xp>p {
-  padding-left: 10px;
+  padding-left: 14px;
 }
 
 #programming-skills {
