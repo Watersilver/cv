@@ -28,8 +28,8 @@ main {
 .a4, .pdf {
   box-sizing: border-box;
   background-color: white;
-  padding: 5mm 20mm;
   --top-marg: 17mm;
+  --top-marg: 20mm;
   padding: var(--top-marg) calc(var(--top-marg) * 1.4142);
   /* box-shadow: 0 0 15px #9B9B9B; */
 }
