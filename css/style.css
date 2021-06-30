@@ -29,7 +29,6 @@ main {
   box-sizing: border-box;
   background-color: white;
   --top-marg: 17mm;
-  --top-marg: 20mm;
   padding: var(--top-marg) calc(var(--top-marg) * 1.4142);
   /* box-shadow: 0 0 15px #9B9B9B; */
 }
@@ -58,13 +57,13 @@ h1 {
 
 h2 {
   font-size: 22px;
-  /* margin: 17px 0 10px; */
+  margin: 17px 0 10px;
   border-bottom: 1px solid black;
 }
 
 h3 {
-  /* margin: 10px 0; */
   margin: 12px 0;
+  margin: 10px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
